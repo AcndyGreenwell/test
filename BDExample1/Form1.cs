@@ -29,7 +29,7 @@ namespace BDExample1
                                                    //Так как наш сервер находтся на этом компьютере
                                                    //пишем такой адрес
 
-            ConnectionString.Database = "test1"; //Имя базы к кторой подключаемся
+            ConnectionString.Database = "test"; //Имя базы к кторой подключаемся
             ConnectionString.UserID = textBox1.Text;  //Имя пользователя. Здесь нуно будетм указать свое имя пользователя и свйо пароль.
             ConnectionString.Password = textBox2.Text;//Пароль ползователя 
 
