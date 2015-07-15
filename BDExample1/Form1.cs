@@ -30,7 +30,7 @@ namespace BDExample1
                                                    //пишем такой адрес
 
             ConnectionString.Database = "test"; //Имя базы к кторой подключаемся
-            ConnectionString.UserID = textBox1.Text;  //Имя пользователя. Здесь нуно будетм указать свое имя пользователя и свйо пароль.
+            ConnectionString.UserID = textBox1.Text;  //Имя пользователя. Здесь нуно будетм указать свое имя
             ConnectionString.Password = textBox2.Text;//Пароль ползователя 
 
             Connection = new MySqlConnection(ConnectionString.GetConnectionString(true)); //Создаем объект подключения к БД. В касестве ппраметра
@@ -62,7 +62,7 @@ namespace BDExample1
             }
             catch (MySqlException ex)
             {
-                MessageBox.Show(ex.ToString()); //Если что то пойдет не так, то сможем посмотреть сообщение об ошибке
+                MessageBox.Show(ex.ToString()); //Если что то пойдет не так, то сможем посмотреть 
             }
         }
 
@@ -91,7 +91,7 @@ namespace BDExample1
             MySqlCommand Command = new MySqlCommand(qs, Connection);
             Connection.Open();
             Command.ExecuteNonQuery();
-            Connection.Close();
+            Connection.Cl
         }
 
         private void label1_Click(object sender, EventArgs e)
