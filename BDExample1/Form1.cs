@@ -62,7 +62,11 @@ namespace BDExample1
             }
             catch (MySqlException ex)
             {
+<<<<<<< HEAD
                 MessageBox.Show(ex.ToString()); //Если что то пойдет не так, то сможем посмотреть 
+=======
+                MessageBox.Show(ex.ToString()); //Если что то пойдет не так, то сможем посмотреть сообщение об ошибке
+>>>>>>> 1eeefe2... Бла бла бла
             }
         }
 
